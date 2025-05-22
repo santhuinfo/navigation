@@ -1,0 +1,72 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbg {
+    background-color: grey;
+    width: 100vw;
+    height: 30px;
+
+    >ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        padding: 2px;
+        gap: 40px;
+        position:relative;
+
+
+
+        li {
+            padding: 2px;
+
+
+            a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                background-color: grey;
+                margin-top: 8px;
+                display: none;
+
+                li {
+                    ul {
+                        background-color: grey;
+                        margin-left:100px;
+                        position:absolute;
+                        visibility: hidden;
+                        margin-top:0px;
+
+                    }
+
+                   &:hover {
+                        ul {
+                            visibility: visible;
+                        }
+                    }
+                }
+
+            }
+
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+
+        }
+        .search{
+            margin-left:-40px;
+        }
+    }
+}

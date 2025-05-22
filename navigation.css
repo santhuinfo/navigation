@@ -1,0 +1,51 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbg {
+  background-color: grey;
+  width: 100vw;
+  height: 30px;
+}
+.navbg > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 2px;
+  gap: 40px;
+  position: relative;
+}
+.navbg > ul li {
+  padding: 2px;
+}
+.navbg > ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbg > ul li a:hover {
+  color: red;
+}
+.navbg > ul li ul {
+  list-style-type: none;
+  background-color: grey;
+  margin-top: 8px;
+  display: none;
+}
+.navbg > ul li ul li ul {
+  background-color: grey;
+  margin-left: 100px;
+  position: absolute;
+  visibility: hidden;
+  margin-top: 0px;
+}
+.navbg > ul li ul li:hover ul {
+  visibility: visible;
+}
+.navbg > ul li:hover ul {
+  display: block;
+}
+.navbg > ul .search {
+  margin-left: -40px;
+}/*# sourceMappingURL=navigation.css.map */
